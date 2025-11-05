@@ -71,7 +71,7 @@ public class Registro extends AppCompatActivity {
         spinnerNacionalidad.setAdapter(adapter);
         spinnerNacionalidad.setSelection(0);
 
-        ArrayAdapter<String> tipoDocAdapter = new ArrayAdapter<>(this,
+        ArrayAdapter<String> tipoDocAdapter = new ArrayAdapter<>(this.peekAvailableContext(),
                 android.R.layout.simple_spinner_item,
                 new String[]{"DNI", "Pasaporte"});
         tipoDocAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
